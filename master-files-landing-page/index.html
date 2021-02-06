@@ -50,7 +50,7 @@
                 <label for="checkbox" class="checktext">I agree to dash terms</label>
             </div>
             <div>
-                <button type="submit">DRIVE WITH US</button>
+                <button type="submit" class="button">DRIVE WITH US</button>
             </div>
             <div class="apply">
                 <p>Already applied?<a href="">Check your application status here</a> </p>
@@ -62,22 +62,26 @@
 
         <!-- starting footer -->
     <footer class="site-footer">
+        <div class="footer-content">
         <div class="earn">
             <h2>See how much you can earn with Dash</h2>
             <p>How many hours do you want to drive with us this week</p>
-            <form action="send-message" method="get">
+            <div class="calc">
+            <form action="send-message" method="get" class="earnwith">
                 <div>
-                    <label for="hours">Hours</label>
-                    <input type="text" id="hours" placeholder="Hours">
+                    <label for="hours" class="label2">Hours</label>
+                    <input type="text" id="hours" placeholder="Hours" class="hours">
                 </div>
                 <div>
-                    <label for="city">City</label>
-                    <input type="text" id="city" placeholder="City">
+                    <label for="city" class="label2">City</label>
+                    <input type="text" id="city" placeholder="City" class="city">
                 </div>
-                <div>
-                    <button type="submit">CALCULATE</button>
-                </div>
+                
             </form>
+                <div>
+                    <button type="submit" class="button2">CALCULATE</button>
+                </div>
+            </div>
         </div>
         <div class="icons">
             <svg xmlns="http://www.w3.org/2000/svg" width="30.625" height="30.625" viewBox="0 0 30.625 30.625">
@@ -95,7 +99,7 @@
               
         </div>
                 
-
+        </div>
     </footer>
 </div>
     

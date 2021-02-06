@@ -326,5 +326,19 @@ footer{
         margin-right: 3rem;
         margin-top: 2rem;
     }
-    
+    .calc{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 2rem;
+    }
+    .icons{
+        display: flex;
+        justify-content: flex-end;
+        
+        
+    }
+    svg{
+        margin: 20px;
+    }
 }

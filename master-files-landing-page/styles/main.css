@@ -183,6 +183,8 @@ input[type=checkbox]{
     margin-bottom: 1rem; */
     width: 100%;
     /* display: block; */
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 .apply a{
     color: red;
@@ -250,9 +252,13 @@ footer{
 .icons{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
+    align-items: center;
+    
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+
 }
+
 
 
 
@@ -300,8 +306,17 @@ footer{
 
 /* desktop */
 @media screen and (min-width: 1024px){
-    
-    
+    .logo{
+        margin-left: 8rem;
+    }
+    .scooter{
+        display: none;
+    }
+    body{
+        background: url(../images/bg-image/scooter.svg) no-repeat center;
+        background-size: 820px;
+         
+    }
     
     main{
         display: grid;
@@ -317,20 +332,31 @@ footer{
     .sec1{
         grid-area: main;
         margin-top: 2rem;
-        
+        margin-left: 8rem;
 
+    }
+    .banner{
+        width: 536px;
     }
     .sec2{
         grid-area: aside;
         align-self: center;
-        margin-right: 3rem;
+        margin-right: 1rem;
         margin-top: 2rem;
     }
-    .calc{
+    .form{
+        width: 537px;
+    }
+    .button{
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    /* .calc{
         display: flex;
         flex-direction: row;
         align-items: center;
         padding-left: 2rem;
+        margin-bottom: none;
     }
     .icons{
         display: flex;
@@ -340,5 +366,37 @@ footer{
     }
     svg{
         margin: 20px;
+        margin-top: none;
+    } */
+    .footer-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+        grid-template-areas: 
+        "main aside"
+        ;
+    }
+    .earnwith{
+        grid-area: main;
+        justify-content: start;
+        margin-left: 2rem;
+    }
+   
+    .icons{
+        grid-area: aside;
+        /* justify-content: center; */
+        justify-content: flex-end;
+        margin-right: 3rem;
+        align-self: flex-end;
+        margin-bottom: 3.5rem;
+        
+    }
+    svg{
+        padding-right: 2rem;
+    }
+    .calc{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
     }
 }

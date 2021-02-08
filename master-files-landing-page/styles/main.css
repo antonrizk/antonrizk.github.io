@@ -125,6 +125,7 @@ p{
     height: 520px;
     width: 100%;
     box-shadow: 20px 20px 50px #C6C6CC;
+    background-color: white;
     
 
 }
@@ -331,6 +332,7 @@ footer{
     body{
         background: url(../images/bg-image/scooter.svg) no-repeat center;
         background-size: 820px;
+        
          
     }
     
@@ -414,5 +416,11 @@ footer{
         display: flex;
         align-items: center;
         margin-bottom: 2rem;
+    }
+    .hours{
+        width: 122px;
+    }
+    .city{
+        width: 260px;
     }
 }

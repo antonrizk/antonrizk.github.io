@@ -48,103 +48,84 @@ table {
   box-sizing: inherit;
   line-height: inherit;
 }
-/*  that was resets */
-
-/* basic styles  */
-
-
 html{
     font-family: 'Montserrat', sans-serif;
     background-color: #F7F7FF;
 }
-/* h1,
-h2,
-h3,
-h4,
-h5 {
-    font-weight: bold;
-}
-h1 {
-    font-size: 5.063rem;
-}
-h2 {
-    font-size: 3.375rem;
-}
-h3 {
-    font-size: 2.25rem;
-}
-h4 {
-    font-size: 1.5rem;
-}
-h5 {
-    font-size: 1rem;
-}
+/* /////////////////////////////////////////
+    ABOVE IS CSS RESETS  and i included the 
+    html style of font and backgroundcolor
+    //////////////////////////////////////// */
 
-p{
-    margin: 1em 0;
-} */
-
-/* ///////////////////////////
-        mobile style
-    ///////////////////////// */
+                            /* ////////////////////////////////////////////////////////
+                              ////////////////   mobile styles     /////////////////
+                         //////////////////////////////////////////////////////// */
+   
+    /*======================================
+    these are my styles for the main "banner"
+    ==========================================/*/
 .wrapper{
-    /* width: 375px; */
     margin: 0 auto;
     padding: 2rem;
 }
-
+/*this moved the logo to the proper position and set the size */
 .main-logo{
     max-width: 150px;
     display: flex;
     justify-content: flex-start;
 }
+/* heading needed to be bigger */
 .banner h1{
    font-size: 5rem;
    font-weight: bold;
    padding-left: 1rem;
 }
+/* slight adjustments for proper placement  */
 .banner p{
     padding-left: 1rem;
     font-size: 1.5rem;
 }
+
+/* ======================================
+styling the main image i called "scooter"
+========================================== */
 .scooter{
     width: 100%;
     padding-bottom: 2rem;
-    padding-top: 3rem;
-    /* padding-left: 1rem; */
-    
+    padding-top: 3rem;   
 }
+
+/* ===========================================
+    styling section 2 that includes the form/ 
+    content of the form/ button/ and labels.
+=============================================== */
 .form{
-    margin: 1rem;
-    
-   
+    margin: 1rem; 
 }
 .contact-us{
     border: 1px solid #C6C6CC;
     border-radius: 15px;
-    height: 550px;
+    height: 520px;
     width: 100%;
     box-shadow: 20px 20px 50px #C6C6CC;
     background-color: white;
-    
-
 }
-/* styling the form inside */
+/* styling the insides of the form */
 .contact-us h2{
     font-size: 3rem;
     font-weight: bolder;
     margin: 1rem;
-    /* margin-left: 1.2rem; */
 }
-/* styling the p in form */
+/* changing the postion of the text  */
 .contact-us p{
     font-size: 1rem;
     padding-left: 1.2rem;
-    /* padding-bottom: 1rem; */
 }
+/* removing display of the outside text */
 .label{
     display: none;
 }
+/* the inputs needed to be changed/ size/ borders/ and positions */
 .contact-us 
 input[type=text]{
     width: 90%;
@@ -156,7 +137,7 @@ input[type=text]{
     box-sizing: border-box;
     border-radius: 10px;
 }
-/* checkbox */
+/* checkbox styles*/
 .contact-us
 input[type=checkbox]{
     margin-left: 1rem;
@@ -167,8 +148,8 @@ input[type=checkbox]{
 }
 .checktext{
     font-size: 1rem;
-    
 }
+/* my styles for the big green button. changed the size/font/postion */
 .button{
     box-sizing: border-box;
     background-color: #57EEAB;
@@ -179,26 +160,28 @@ input[type=checkbox]{
     font-weight: bold;
     font-size: 24px;
     border-radius: 15px;
-    /* margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 1rem;
-    margin-bottom: 1rem; */
     width: 100%;
     /* display: block; */
     margin-top: 15px;
     margin-bottom: 10px;
 }
+/* changing the anchor tag to red */
 .apply a{
     color: red;
-    
 }
 
+                    /* ////////////////////////////////////////////////////////
+                    ////////////////   FOOTER STYLES       /////////////////
+                //////////////////////////////////////////////////////// */
+
+
+/* extablishing basic styles */
 footer{
     background-color: #fffd8c;
     width: 100%;
-    margin-top: 3rem;
-    
+    margin-top: 3rem;    
 }
+/* styling the font styles  */
 .earn h2{
     font-weight: bold;
     /* font-size: 1rem; */
@@ -212,14 +195,22 @@ footer{
     margin-top: 1rem;
     margin-bottom: 15px;
 }
+/* removing the text from outside the label */
 .label2{
     display: none;
 }
+/* =========================================
+     styling the form in side the footer
+     styles include flexing the postion
+     styling the inputs making them bigger 
+     and moving and styling the button2
+   =========================================   */
 .earnwith{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+/* hours input */
 .hours{
     padding-top: 13px;
     padding-bottom: 13px;
@@ -229,12 +220,14 @@ footer{
     border: none;
     border-radius: 10px;
 }
+/* city input */
 .city{
     padding: 13px 0px 13px 35px;
     margin-left: 20px;
     border: none;
     border-radius: 10px;
 }
+/* calculate button */
 .button2{
     display: block;
     background-color: #FF8480;
@@ -251,6 +244,11 @@ footer{
     margin-bottom: 1rem;
     width: 250px;
 }
+
+/* ====================================
+    icons needed their own flex styles
+    centered them and postioned them 
+    ================================= */
 .icons{
     display: flex;
     flex-direction: row;
@@ -263,49 +261,60 @@ footer{
 
 
 
+/* ////////////////////////////////////////////////////////
+ ////////////////   media query TABLET      /////////////////
+//////////////////////////////////////////////////////// */
 
-
-/* tablet styles */
+ /* SET up a min and max for a responsive tablet sizing */
 @media screen and (min-width: 768px) and (max-width: 1024px){
+   /* //// needed to change the green button and flex the
+    position of the text underneath the button///// */
     .button{
         width: 100%;
-        /* display: block; */
-        
-    }
+     }
     .apply{
         display: flex;
         justify-content: center;
     }
     
-    
+    /* moving the text in the footer a bit to the right 
+    to center it with the footer form */
     .footer-content{
         padding-left: 5rem;
     }
+    /* changing the styles of the footer form */
     .calc{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        /* justify-content: space-evenly; */
         align-items: baseline;
         margin-left: 2.5rem;
         
     }
+    /* ////////
+    changing the inpendent styles of the inputs
+    trying to make them smaller and bigger
+    ///////////////// */
     .hours{
         width: 122px;
     }
     .city{
-        /* padding-right: 7rem;
-        padding-left: none; */
         width: 260px;
     }
     /* try to move the city input more left?  */
+
+    /* pushing everything up a bit  */
     .site-footer{
         padding-bottom: 20px;
         width: 100%;
     }
+    /* //////////////////
+        the icons needed to be flexed centered and have them spaced nicely
+        underneath the form
+        //////////////////// */
     .icons{
         display: flex;
-        /* justify-content: space-evenly; */
+        
         justify-content: center;
         align-self: center;
     }
@@ -314,78 +323,75 @@ footer{
     }
         
 
-
-
-    
-
-        
+/* ////////////////////////////////////
+////////closing tablet media query///////// */       
 }
 
-/* desktop */
+
+
+
+
+
+/* ////////////////////////////////////////////////////////
+ ////////////////   media query DESKTOP    /////////////////
+//////////////////////////////////////////////////////// */
+
 @media screen and (min-width: 1024px){
+    /*  logo needed to be bigger */
     .logo{
         margin-left: 8rem;
     }
+    /* removing the scooter image and adding it as a background image  */
     .scooter{
         display: none;
     }
     body{
         background: url(../images/bg-image/scooter.svg) no-repeat center;
         background-size: 820px;
-        
-         
     }
-    
+    /* //////////////////////////////////////////////////////////////////////////
+    establishing a grid view. moving the text to the left and form to the right
+    ////////////////////////////////////////////////////////////////////////////// */
     main{
         display: grid;
-       
         grid-template-areas: 
         
         "main side aside"
        ;
        grid-template-columns: 1fr 1fr 1fr; 
-        
     }
-    
+    /* moving text to the left */
     .sec1{
         grid-area: main;
         margin-top: 2rem;
         margin-left: 8rem;
 
     }
+    /* changing the size */
     .banner{
         width: 536px;
     }
+    /* moving the form to the right */
     .sec2{
         grid-area: aside;
         align-self: center;
         margin-right: 1rem;
         margin-top: 2rem;
     }
+    /* changing the size */
     .form{
         width: 537px;
     }
+    /* in the above process the button needed to be bigger */
     .button{
         margin-top: 25px;
         margin-bottom: 15px;
     }
-    /* .calc{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 2rem;
-        margin-bottom: none;
-    }
-    .icons{
-        display: flex;
-        justify-content: flex-end;
-        
-        
-    }
-    svg{
-        margin: 20px;
-        margin-top: none;
-    } */
+    /* //////////////////////////////////////////
+         styling the footer in desktop
+    ////////////////////////////////////////// */
+
+    /* establishing a grid to split the contect and align them.  */
     .footer-content{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -394,33 +400,42 @@ footer{
         "main aside"
         ;
     }
+    /* sending the text in the footer to the left */
     .earnwith{
         grid-area: main;
         justify-content: start;
         margin-left: 2rem;
     }
-   
+    /* sendin the icons to the right */
     .icons{
         grid-area: aside;
-        /* justify-content: center; */
         justify-content: flex-end;
         margin-right: 3rem;
         align-self: flex-end;
         margin-bottom: 3.5rem;
         
     }
+    /* styling icons so they are spaced nicely */
     svg{
         padding-right: 2rem;
     }
+    /* decided to flex the form in the footer so its 
+    displayed in a inlineblock and aligns with the icons */
     .calc{
         display: flex;
         align-items: center;
         margin-bottom: 2rem;
     }
+    /* small change of the inputs */
     .hours{
         width: 122px;
     }
     .city{
         width: 260px;
     }
+    
+    
+    /* =============================
+        closing media query for desktop
+        ================================= */
 }

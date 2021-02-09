@@ -168,6 +168,7 @@ input[type=checkbox]{
 /* changing the anchor tag to red */
 .apply a{
     color: red;
+    text-decoration: none;
 }
 
                     /* ////////////////////////////////////////////////////////

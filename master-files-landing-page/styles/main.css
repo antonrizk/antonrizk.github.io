@@ -138,14 +138,14 @@ input[type=text]{
     border-radius: 10px;
 }
 /* checkbox styles*/
-.contact-us
+/* .contact-us
 input[type=checkbox]{
     margin-left: 1rem;
     height: 15px;
     width: 15px;
     border-radius: 20px;
     padding: 4rem;
-}
+} */
 .checktext{
     font-size: 1rem;
 }

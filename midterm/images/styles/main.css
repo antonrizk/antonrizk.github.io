@@ -45,6 +45,7 @@ table {
 /* setting up basic style for all pages like fonts and stuff */
 html{
     font-family: monospace;
+    
 
 }
 
@@ -55,12 +56,12 @@ html{
 a,
 a:link,
 a:visited{
-    color: white;
+    color: #556270;
     text-decoration: none;
 }
 a:hover,
 a:focus{
-    color: #00add8;
+    color: darkred;
 }
 
 h1,
@@ -69,7 +70,7 @@ h3,
 h4,
 h5 {
     font-weight: bold;
-    color: darkred;
+    color: #556270;
 }
 h1 {
     font-size: 3.063rem;
@@ -87,25 +88,28 @@ h5 {
     font-size: 1rem;
 }
 
-p{
-    /* margin: 1em 0; */
-}
+
 /* starting style for the nav and banner */
 /* //////////////////////////////////////////
         home page mobile
 /////////////////////////////////////// */
 .banner{
-    background: url(../Mask\ Group\ 17@2x-min.jpg) no-repeat center bottom;
-    background-size: 100%;
-    height: 100%;
-    
-    
-    
+    background: url(../Mask\ Group\ 17@2x-min.jpg) no-repeat center;
+    background-size: cover;
+    /* height: 100%; */
 }
-.nav-list{
+.banner-content p{
     font-size: large;
+    padding: 2rem;
+    color: black;
+}    
+    
+    
+.nav-list{
+    font-size: xx-large;
     display: block;
-    padding-top: 0.2rem;
+    padding-top: 0.3rem;
+    
 }
 .nav-list ul{
     
@@ -118,9 +122,10 @@ p{
 .nav-list li{
     display: block;
     text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   background-color: rgba( 0, 0, 0, 0.2 );
   text-transform: uppercase;
+  padding: 1.5rem;
     
 }
 .nav-icons{
@@ -133,26 +138,35 @@ p{
 }
 .banner-content h1{
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     
 }
 .banner-content p{
     text-align: center;
-    /* padding: 0 3rem; */
-    color: darkred;
+    
+    color: #556270;
+    padding-bottom: 6rem;
 }
 button.CTA{
     align-self: center;
-    background-color: darkred;
+    background-color: #C44D58;
     border-radius: 100px;
     color: white;
     border: none;
     padding: 1rem 3rem;
-    max-width: 55%;
+    width: 85%;
+    margin-bottom: 8rem;
+    transition: 0.8s ease-in-out 0.3s;
     
+}
+.CTA:hover{
+    background: darkred;
+    transform: scale(1.2);
 }
 .wrapper{
     margin: 0 auto;
-    /* padding: 4rem; */
+    padding: 2rem;
     
 }
 .batch1{
@@ -180,7 +194,7 @@ button.CTA{
 .img1 .sale1{
  
   /* margin-left: 6.5rem; */
-  background-color: rgba(255, 0, 0, 0.6);
+  background-color: #FF6B6B;
   color: white;
   font-size: 16px;
   padding: 24px;
@@ -188,11 +202,18 @@ button.CTA{
   cursor: pointer;
   border-radius: 30px 100px;
   width: 100%;
+  transition: 0.3s ease-in-out 0.3s;
 }
+.sale1:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(0.9);
+}
+
 
 .img2 .sale2{
    
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #FF6B6B;
     color: white;
     font-size: 16px;
     padding: 24px;
@@ -200,10 +221,11 @@ button.CTA{
     cursor: pointer;
     border-radius: 30px 100px;
     width: 100%;
+    transition: 0.3s ease-in-out 0.3s;
 }
 .img3 .sale3{
     
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #FF6B6B;
     color: white;
     font-size: 16px;
     padding: 24px;
@@ -211,10 +233,11 @@ button.CTA{
     cursor: pointer;
     border-radius: 30px 100px;
     width: 100%;
+    transition: 0.3s ease-in-out 0.3s;
 }
 .img4 .sale4{
     
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #FF6B6B;
     color: white;
     font-size: 16px;
     padding: 24px;
@@ -222,31 +245,67 @@ button.CTA{
     cursor: pointer;
     border-radius: 30px 100px;
     width: 100%;
+    transition: 0.3s ease-in-out 0.3s;
+}
+.sale2:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(0.9);
+}
+.sale3:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(0.9);
+}
+.sale4:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(0.9);
+
 }
 .buttonshop{
    width: 100%;
    padding: 1.5rem;
    margin-top: 2rem;
    border: none;
-   background-color: darkred;
+   background-color: #C44D58;
    font-size: 16px;
    color: white;
    border-radius: 25px;
+   transition: all ease-in-out 0.5s;
+}
+
+
+/* add transition in the original and then add styling in the hover */
+
+.buttonshop:hover{
+    letter-spacing: 20px;
+    color: black;
+    background: none;
+    transition: all 0.8s;
+    border-width: 3px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: black;
+    transform: scale(1.1);
+
+}
+
    
     
-}
 section.wall{
-    background: url(../pexels-steve-johnson-1484759-min.jpg) no-repeat center;
-    background-size: 100%;
+    background: url(../pexels-steve-johnson-1484759-min.jpg) no-repeat;
+    background-size: cover;
     height: 300px;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
 }
 /* background wall section */
 .wall p{
-    color: darkred;
+    color: #556270;
     text-align: center;
     padding: 4rem 2rem 1rem 2rem;
-    /* font-size: 18px; */
+    
+    
 }
 .lbutton{
     display: flex;
@@ -255,10 +314,16 @@ section.wall{
 }
 .CTA2{
     border: none;
-    background-color: darkred;
+    background-color: #C44D58;
     color: white;
     padding: 1rem 4rem;
     border-radius: 30px 100px;
+    transition: all ease-in-out 0.5s;
+}
+.CTA2:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(1.2);
 }
 /* second seciton for homepage shop */
 
@@ -273,12 +338,12 @@ section.wall{
 }
 .wrapper2{
     margin: 0 auto;
-    padding: 4rem;
+    padding: 2rem;
     
 }
 .best-sellers-2 p{
     margin-top: 2rem;
-    color: darkred;
+    color: #556270;
 }
 
 .batch2{
@@ -291,18 +356,25 @@ section.wall{
 
 .sec1 .sold1{
       
-      background-color: rgba(255, 0, 0, 0.6);
-      color: white;
-      font-size: 16px;
-      padding: 20px;
-      border: none;
-      cursor: pointer;
-      border-radius: 30px 100px;
-      width: 100%;
+    background-color: #FF6B6B;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px 100px;
+    width: 100%;
+    transition: all ease-in-out 0.5s;
+    
+}
+.sold1:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(1);
 }
 .sec2 .sold2{
       
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #FF6B6B;
     color: white;
     font-size: 16px;
     padding: 20px;
@@ -310,10 +382,16 @@ section.wall{
     cursor: pointer;
     border-radius: 30px 100px;
     width: 100%;
+    transition: all ease-in-out 0.5s;
+}
+.sold2:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(1);
 }
 .sec3 .sold3{
       
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #FF6B6B;
     color: white;
     font-size: 16px;
     padding: 20px;
@@ -321,10 +399,16 @@ section.wall{
     cursor: pointer;
     border-radius: 30px 100px;
     width: 100%;
+    transition: all ease-in-out 0.5s;
+}
+.sold3:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(1);
 }
 .sec4 .sold4{
       
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #FF6B6B;
     color: white;
     font-size: 16px;
     padding: 20px;
@@ -332,21 +416,39 @@ section.wall{
     cursor: pointer;
     border-radius: 30px 100px;
     width: 100%;
+    transition: all ease-in-out 0.5s;
+}
+.sold4:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(1);
 }
 .buttonshop2{
     width: 100%;
     padding: 1.5rem;
     margin-top: 2rem;
     border: none;
-    background-color: darkred;
+    background-color: #C44D58;
     font-size: 16px;
-    color: white;
+    /* color: white; */
     border-radius: 25px;
+    transition: all  ease-out 0.8s;
     
      
 }
+.buttonshop2:hover{
+    letter-spacing: 20px;
+    color: black;
+    background: none;
+    transition: all 0.8s;
+    border-width: 3px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: black;
+    transform: scale(1.1);
+}
 .site-footer{
-    background-color: darkred;
+    background-color: #556270;
 }
 .site-content{
     text-align: center;
@@ -368,8 +470,13 @@ section.wall{
 /* //////////////////////////////////////////
         shop page mobile
 /////////////////////////////////////// */
+.bodybackground{
+    background: url(../pexels-steve-johnson-1484759-min.jpg);
+    background-size: cover;
+}
 .shop-wrapper{
     margin: 0 auto;
+    padding: 2rem;
 }
 .shop-wapper h1{
     padding-top: 2rem;
@@ -403,14 +510,14 @@ main h3{
 .card-content3,
 .card-content4{
     padding: 2rem;
-    color: darkred;
+    color: #95040B;
     display: flex;
     flex-direction: column;
     
 }
 
 .card-content1 button{
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #FF6B6B;
     color: white;
     padding: 10px;
     border: none;
@@ -419,9 +526,15 @@ main h3{
     width: 50%;
     align-self: flex-end;
     margin-top: 1rem;
+    transition: all ease-in-out 0.5s;
+}
+.card-content1 button:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(1);
 }
 .card-content2 button{
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #FF6B6B;
     color: white;
     padding: 10px;
     border: none;
@@ -430,9 +543,15 @@ main h3{
     width: 50%;
     align-self: flex-end;
     margin-top: 1rem;
+    transition: all ease-in-out 0.5s;
+}
+.card-content2 button:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(1);
 }
 .card-content3 button{
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #FF6B6B;
     color: white;
     padding: 10px;
     border: none;
@@ -441,9 +560,15 @@ main h3{
     width: 50%;
     align-self: flex-end;
     margin-top: 1rem;
+    transition: all ease-in-out 0.5s;
+}
+.card-content3 button:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(1);
 }
 .card-content4 button{
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #FF6B6B;
     color: white;
     padding: 10px;
     border: none;
@@ -452,10 +577,17 @@ main h3{
     width: 50%;
     align-self: flex-end;
     margin-top: 1rem;
+    transition: all ease-in-out 0.5s;
+}
+.card-content4 button:hover{
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(1);
 }
 .chair-photo{
-    background: url(../pexels-mikhail-nilov-6707631.jpg) no-repeat center;
-    background-size: 100%;
+    background: url(../pexels-paula-schmidt-963486.jpg) no-repeat center;
+    background-size: cover;
+    /* background-position: bottom; */
     
     margin-bottom: 5rem;
     
@@ -464,14 +596,14 @@ main h3{
 .chair-content{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 5rem 2rem 20rem 2rem;
     margin-top: 2rem;
     
 }
 .chair-content button{
     width: 25%;
     align-self: flex-end;
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #C44D58;
     color: white;
     padding: 5px;
     border: none;
@@ -479,7 +611,422 @@ main h3{
     border-radius: 30px 100px;
     margin-top: 1rem;
     margin-right: 2rem;
+    transition: all ease-in-out 0.5s;
+}
+.chair-content button:hover{
+  
+        background: darkred;
+        border-radius: 25px;
+        transform: scale(1);
+    
 }
 /*/////////////////////////
     contact mobile style
 ///////////////////////////  */
+.headershop{
+    background: url(../leone-venter-pVt9j3iWtPM-unsplash-min.jpg) bottom no-repeat;
+    background-size: cover;
+    height: 500px;
+    
+    
+    /* flex-direction: column; */
+    /* align-items: flex-end; */
+    
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header-content h1{
+    padding-left: 2rem;
+    padding-top: 10rem;
+}
+/* //// contact form//// */
+.contact-form{
+    /* background-color: rgba( 217, 218, 222, 0.1 ); */
+    border-radius: 25px;
+    padding: 2rem;
+    margin: 2rem;
+    border: #C44D58 solid 5px;
+}
+label{
+    display: none;
+}
+input{
+    
+    width: 100%;
+    border-radius: 25px;
+    border: #C44D58 solid 1px;
+    padding: 5px 0;
+    margin-bottom: 1rem;
+}
+textarea{
+    width: 100%;
+    border: #C44D58 solid 1px;
+    border-radius: 25px;
+    padding: 5px 0;
+}
+::placeholder{
+    padding: 15px;
+}
+.button{
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #C44D58;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px 100px;
+    /* margin-top: 1rem; */
+    /* margin-right: 2rem; */
+    transition: all ease-in-out 0.5s;
+}
+.button:hover{
+    
+    background: darkred;
+    border-radius: 25px;
+    transform: scale(1);
+
+}
+.map{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    max-width: 100%;
+}
+/* /////////////tablet styles////////////// */
+@media screen and (min-width: 768px){
+    /* home page styles */
+    .nav-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-list li{
+        padding-left: 8rem;
+        padding-right: 8rem;
+        
+    }
+    .banner-content button{
+        max-width: 50%;
+        margin-bottom: 5rem;
+    }
+    .batch1{
+        display: grid;
+        grid-template-areas: 
+        "side aside"
+        "side1 aside1";
+    }
+    .img1{
+        grid-area: side;
+        padding: 2rem;
+    }
+    .img2{
+        grid-area: aside;
+        padding-top: 29rem;
+        padding: 2rem;
+        
+    }
+    .img3{
+        grid-area: side1;
+        padding: 2rem;
+
+    }
+    .img4{
+        grid-area: aside1;
+        padding: 2rem;
+    }
+    .batch2{
+        display: grid;
+        grid-template-areas: 
+        "side2 side3"
+        "side4 side5";
+        
+    
+    }
+    .sec1{
+        grid-area: side2;
+        padding: 2rem;
+    }
+    .sec4{
+        grid-area: side3;
+        padding: 2rem;
+
+    }
+    .sec3{
+        grid-area: side4;
+        padding: 2rem;
+    }
+    .sec2{
+        grid-area: side5;
+        padding: 2rem;
+    }
+    /* ////shop tablet styles////// */
+    .card1,
+    .card2,
+    .card3,
+    .card4{
+        padding-left: 10rem;
+        padding-right: 10rem;
+        
+    }
+    
+    .chair-photo{
+        background-position: center;
+        background-size: cover;
+    }
+    .chair-content{
+        padding-top: 5rem;
+        padding-bottom: 20rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+    .chair-content p{
+        margin-top: 1rem;
+    }
+    .card-content1 button,
+    .card-content2 button,
+    .card-content3 button,
+    .card-content4 button{
+        width: 100%;
+    }
+    /* /////////// contact page tablet styles///// */
+   .form{
+       display: grid;
+       grid-gap: 1rem;
+       grid-template-columns: 1fr 1fr;
+   }
+   .move{
+       grid-column: 1 / 3;
+       
+   }
+    .movebutton{
+        grid-column: 2 / 3;
+        
+    }
+    .button{
+        padding: 1rem 0;
+    }
+}
+/* staring desktop styles */
+@media screen and (min-width: 1025px){
+    /* styling home page */
+   .nav{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-gap: 5px;
+   }
+   .top-nav .nav-icons{
+       display: block;
+       float: right;
+       margin-right: 1rem;
+      
+   }
+   
+   .nav .top-nav{
+       grid-column: 3 / 4;
+      
+   }
+   .nav-list li{
+       background: none;
+       border-bottom: darkred solid 5px;
+    }
+    .banner-content h1{
+        align-self: flex-start;
+        padding-left: 2rem;
+        
+    }
+    .banner-content .contentp{
+        font-size: 2rem;
+        text-align: left;
+        
+    }
+    .banner-content .CTA{
+       max-width: 25%;
+    }
+    .batch1{
+        display: grid;
+        grid-template-areas: 
+        "side main aside"
+        "side main2 aside";
+        column-gap: 20px;
+        
+    }  
+    .img1{
+        grid-area: side;
+        padding: 0px;
+        margin-top: 10px;
+        
+    }
+    .img2{
+        grid-area: main;
+        align-self: center;
+        padding: 0px;
+       
+    }
+    .img3{
+        grid-area: main2;
+        align-self: center;
+        padding: 0px;
+    }
+    .img4{
+        grid-area: aside;
+        padding: 0px;
+        margin-top: 10px;
+        
+    }
+    .batch1 .image3{
+        margin-top: 0px;
+    }
+        
+    .wall p{
+        font-size: 2rem;
+    }  
+    .sellers h2{
+        font-size: 4rem;
+    }  
+    .best-sellers-2 h2{
+        font-size: 4rem;
+    }
+    .best-sellers-2 p{
+        font-size: 1.5rem;
+    }
+   /* starting grid for section 2 */
+   .batch2{
+    display: grid;
+    grid-template-areas: 
+    "side main aside"
+    "side main2 aside";
+    column-gap: 5px;
+    }
+    .sec1{
+        grid-area: side;
+    }
+    .sec3{
+        grid-area: main;
+    }
+    .sec4{
+        grid-area: main2;
+    }
+    .sec2{
+        grid-area: aside;
+    }
+    /* ////starting desktop for shop page */
+    .cardgrid{
+        display: grid;
+        grid-template-areas: 
+        "m2 m2"
+        "m3 m3"
+        "m4 m4"
+        "m5 m5";
+        /* grid-gap: 3rem; */
+    }
+    .card1{
+        grid-area: m2;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .card-content1,
+    .card-content2,
+    .card-content3,
+    .card-content4{
+        font-size: auto;
+       display: flex;
+       flex-direction: column;
+       
+       padding-top: 40px;
+       padding-bottom: 0px;
+    }
+    .cart1,
+    .cart2,
+    .cart3,
+    .cart4{
+        max-width: 55%;
+        
+        
+    }
+    
+    .shopphoto1{
+        max-height: 600px;
+        max-width: 500px;
+    }
+    .card2{
+        grid-area: m3;
+        display: flex;
+        flex-direction: row;
+    }
+    .shopphoto2{
+        max-height: 600px;
+        max-width: 500px;
+    }
+    .card3{
+        grid-area: m4;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .shopphoto3{
+        max-height: 600px;
+        max-width: 500px;
+    }
+    .card4{
+        grid-area: m5;
+        display: flex;
+        flex-direction: row;
+    }
+    .shopphoto4{
+        max-height: 600px;
+        max-width: 500px;
+    }
+    .chair-content{
+        font-size: 2rem;
+    }
+    button.shop-CTA{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+
+
+
+
+    /* .card1{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 0px;
+    }
+    .shopphoto1{
+        max-height: 600px;
+        max-width: 500px;
+    }
+    .card-content1{
+        
+        font-size: 1.5rem;
+    }
+    
+    .card2{
+        display: flex;
+        flex-direction: row;
+        padding-left: 0px;
+    }
+    .shopphoto2{
+        max-height: 600px;
+    }
+    .card3{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 0px;
+    }
+    .shopphoto3{
+        max-height: 500px;
+        max-width: 600px;
+    }
+    .card4{
+        display: flex;
+        flex-direction: row;
+        padding-left: 0px; 
+    }
+    .shopphoto4{
+        max-height: 600px;
+    } */
+}

@@ -42,28 +42,42 @@ table {
 	border-collapse: collapse;
     border-spacing: 0;
 }
-/* setting up basic style for all pages like fonts and stuff */
+/* above was css resets i got from google. check readme.txt for refrence */
+
+/* setting up basic style for all pages like fonts, website width and margins. heading sizes, what happens when a link is clicked.
+the font i am using is called monospace. its a google font, "check readme.txt for refrence.*/
 html{
     font-family: monospace;
-    
-
 }
-
-/* body{
+/* i have many containers and and wrappers to set the width for rather then on main one.  */
+.container{
     max-width: 1200px;
     margin: 0 auto;
-} */
+}
+.wrapper{
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
+.wrapper2{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.shop-wrapper{
+    margin: 0 auto;
+    padding: 2rem;
+}
 a,
 a:link,
 a:visited{
-    color: #556270;
+    color: white;
     text-decoration: none;
 }
 a:hover,
 a:focus{
     color: darkred;
 }
-
+/* setting up how i big i want my headings to be */
 h1,
 h2,
 h3,
@@ -87,38 +101,47 @@ h4 {
 h5 {
     font-size: 1rem;
 }
+    
 
 
-/* starting style for the nav and banner */
+
+
+
 /* //////////////////////////////////////////
         home page mobile
 /////////////////////////////////////// */
+
+/* starting my styles for my home page mobile. i decided to imclude my banner in image as a css background image, i have it centered and its covering the enite section of the heading. */
 .banner{
     background: url(../Mask\ Group\ 17@2x-min.jpg) no-repeat center;
     background-size: cover;
-    /* height: 100%; */
+    
 }
+/* i wanted the text to be a little bit bigger and have the color darker so its a little bit more readable against the background */
 .banner-content p{
     font-size: large;
     padding: 2rem;
     color: black;
 }    
     
-    
+    /* setting up the main nav for the pages. the style i am going for is big banner with a light background stacked on top of each other with some space between them. i am going to set that up and flex them in order to have them on top of each other.  */
+
+/* changing the sizr of font and display */
 .nav-list{
     font-size: xx-large;
     display: block;
     padding-top: 0.3rem;
     
 }
+/* making them stack on top of each other with flex */
 .nav-list ul{
     
     display: flex;
     flex-direction: column;
-    
-    
-
 }
+    
+    
+/* adding some styles and background to them and spacing them nicely  */
 .nav-list li{
     display: block;
     text-align: center;
@@ -128,26 +151,30 @@ h5 {
   padding: 1.5rem;
     
 }
+/* i am hiding the svg icons in all the mobile pages.  */
 .nav-icons{
     display: none;
 }    
-
+/* using flex for the banner content section because i want them to be centered an stacked on top of each other while also bieng responsive. */
 .banner-content{
     display: flex;
     flex-direction: column;
 }
+  /*making the heading a big bigger from its original size  */
 .banner-content h1{
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 1rem;
     
 }
+/* centering the text and styling it */
 .banner-content p{
     text-align: center;
     
     color: #556270;
     padding-bottom: 6rem;
 }
+/*  this is my banner call to action button. i am styling it to the size it needs to be i am also adding a transition setting so the hover can be eased in and out and have its set times. */
 button.CTA{
     align-self: center;
     background-color: #C44D58;
@@ -160,27 +187,25 @@ button.CTA{
     transition: 0.8s ease-in-out 0.3s;
     
 }
+/* call to action hover effect making it darker color and scale up when hovered */
 .CTA:hover{
     background: darkred;
     transform: scale(1.2);
 }
-.wrapper{
-    margin: 0 auto;
-    padding: 2rem;
-    
-}
+/* ////////////starting the first section of best sellers//////////////// */
+/* i am using flex to stack everything ontop of each other and be cenetered nicely */
 .batch1{
     display: flex;
     flex-direction: column;
     align-self: center;
-    /* margin: 5rem; */
-    
 }
-
+    
+    
+/* i want this header to be a bit bigger  */
 .sellers h2{
     margin-top: 2rem;
 }
-
+/* i am setting the images in the first batch to be responsive and have the styling of its borders like that */
 .image1,
 .image2,
 .image3,
@@ -191,9 +216,9 @@ button.CTA{
     margin-top: 2rem;
     
 }
+/*   "BUTTONS i am now starting to style the buttons for all the images in the first section of best sellers these buttons have a unique shape set by border radius changing the cursor when on the button, chanignt the size to make them bigger and line up with the images. and adding a transition for the hover. */
 .img1 .sale1{
  
-  /* margin-left: 6.5rem; */
   background-color: #FF6B6B;
   color: white;
   font-size: 16px;
@@ -204,12 +229,13 @@ button.CTA{
   width: 100%;
   transition: 0.3s ease-in-out 0.3s;
 }
+/* adding a hover styling of darker color and when hoverd the borer of the buttton changes to a fuller button. */
 .sale1:hover{
     background: darkred;
     border-radius: 25px;
     transform: scale(0.9);
 }
-
+/* see above comment "buttons for how i also styled this button*/
 
 .img2 .sale2{
    
@@ -223,6 +249,7 @@ button.CTA{
     width: 100%;
     transition: 0.3s ease-in-out 0.3s;
 }
+/* see above comment "buttons for how i also styled this button*/
 .img3 .sale3{
     
     background-color: #FF6B6B;
@@ -235,6 +262,7 @@ button.CTA{
     width: 100%;
     transition: 0.3s ease-in-out 0.3s;
 }
+/* see above comment "buttons for how i also styled this button*/
 .img4 .sale4{
     
     background-color: #FF6B6B;
@@ -247,6 +275,7 @@ button.CTA{
     width: 100%;
     transition: 0.3s ease-in-out 0.3s;
 }
+/* i decided to add all the hover styles together right after the button styles. */
 .sale2:hover{
     background: darkred;
     border-radius: 25px;
@@ -261,29 +290,46 @@ button.CTA{
     background: darkred;
     border-radius: 25px;
     transform: scale(0.9);
-
 }
+/* this is shop button styling. needed to make it bigger and i wanted to center it so i flexed the container that the button is in */
+.ShopCTA{
+    padding: 5rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* for this button i wanted certain styles and make it a bit diffrent from the others. it has a diffrent border and color. i am adding a transition for the hover that is diffrenet from the others. so i flexed the container shop-button that the button is in so i can center it and add some styling */
+.shop-button{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+/* button styles */
 .buttonshop{
-   width: 100%;
-   padding: 1.5rem;
-   margin-top: 2rem;
+    
+   max-width: 100%;
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
+   padding-left: 10rem;
+   padding-right: 10rem;
+   
    border: none;
-   background-color: #C44D58;
+   background: #C44D58;
    font-size: 16px;
    color: white;
    border-radius: 25px;
    transition: all ease-in-out 0.5s;
 }
-
-
-/* add transition in the original and then add styling in the hover */
+/* this is the hover effect of the shop buttons. when hovered the text will start spacing out the background disapears and it shows top and bottom borders. this effext eases in and out and makes the button a little bigger */
 
 .buttonshop:hover{
-    letter-spacing: 20px;
+    letter-spacing: 2px;
     color: black;
     background: none;
     transition: all 0.8s;
-    border-width: 3px;
+    border-width: 2px;
     border-top-style: solid;
     border-bottom-style: solid;
     border-color: black;
@@ -291,6 +337,8 @@ button.CTA{
 
 }
 
+
+/* this section is callled a wall because i have a picture of a wall in it. i am adding a image in a css back ground to that section. the images covers the entire section. i have some text and a button ontop of this image */
    
     
 section.wall{
@@ -299,7 +347,7 @@ section.wall{
     height: 300px;
     margin-top: 1.2rem;
 }
-/* background wall section */
+/* stylign the text that is on top the image making be where it needs to be. and changing its color */
 .wall p{
     color: #556270;
     text-align: center;
@@ -307,11 +355,13 @@ section.wall{
     
     
 }
+/* this is the container that the button ontop of the image is in. i am flexing it and cetering it, to make the button centered.  */
 .lbutton{
     display: flex;
     justify-content: center;
     
 }
+/* styling the CTA2 which is the learn more button. giving it its border and color. also adding the transtion for the hover. all my call to action buttons have this styling and hover.  */
 .CTA2{
     border: none;
     background-color: #C44D58;
@@ -320,13 +370,14 @@ section.wall{
     border-radius: 30px 100px;
     transition: all ease-in-out 0.5s;
 }
+/* the hover will make the button bigger and change its color to darker. and make its border fuller */
 .CTA2:hover{
     background: darkred;
     border-radius: 25px;
     transform: scale(1.2);
 }
-/* second seciton for homepage shop */
-
+/* /////////////// setting up the second section of best seller on this page. /////////////// */
+/* first making all the images responsive and have be the size i want them to be. */
 .p1,
 .p2,
 .p3,
@@ -336,16 +387,18 @@ section.wall{
     border-radius: 30px 100px;
     margin-top: 3rem;
 }
+/* this wrapper just aligns this section with the one above.  */
 .wrapper2{
     margin: 0 auto;
     padding: 2rem;
     
 }
+/*  changing the text to be a bit bigger so its more readable in mobile.  */
 .best-sellers-2 p{
     margin-top: 2rem;
     color: #556270;
 }
-
+/* batch 2 is the second section of the best seller which is mugs. i am flexing this entire section so i can stack everythign ontop of each other and give it some nice spacing */
 .batch2{
         display: flex;
         flex-direction: column;
@@ -353,7 +406,7 @@ section.wall{
         /* padding-left: 9rem; */
         
 }
-
+/* these are all the styling for the buttons and thier hovers. all these stylings are the same as the ones from the first section. see "BUTTONS comment for how i did these */
 .sec1 .sold1{
       
     background-color: #FF6B6B;
@@ -423,30 +476,8 @@ section.wall{
     border-radius: 25px;
     transform: scale(1);
 }
-.buttonshop2{
-    width: 100%;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    border: none;
-    background-color: #C44D58;
-    font-size: 16px;
-    /* color: white; */
-    border-radius: 25px;
-    transition: all  ease-out 0.8s;
-    
-     
-}
-.buttonshop2:hover{
-    letter-spacing: 20px;
-    color: black;
-    background: none;
-    transition: all 0.8s;
-    border-width: 3px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: black;
-    transform: scale(1.1);
-}
+/*  all the button styles and hovers done */
+/* /////////////footer styling time.. so background color is set. i also want the text to be aligned and icons to be seens and be spaced out evenly .  */
 .site-footer{
     background-color: #556270;
 }
@@ -460,6 +491,7 @@ section.wall{
     text-align: center;
 
 }
+/* flexed the icons so i can space them evenly.  */
 .footer-icons{
    display: flex;
    justify-content: space-evenly;
@@ -470,17 +502,16 @@ section.wall{
 /* //////////////////////////////////////////
         shop page mobile
 /////////////////////////////////////// */
+/* the entire page has a background image of a wall texture. so i added this in here with a background tag. */
 .bodybackground{
     background: url(../pexels-steve-johnson-1484759-min.jpg);
     background-size: cover;
 }
-.shop-wrapper{
-    margin: 0 auto;
-    padding: 2rem;
-}
+/* felt like making this header a bit bigger so its more readable */
 .shop-wapper h1{
     padding-top: 2rem;
 }
+/* making sure all the images in this page are the size i want them and responsive */
 .shopphoto1,
 .shopphoto2,
 .shopphoto3,
@@ -490,21 +521,22 @@ section.wall{
     border-radius: 30px 100px;
     margin-top: 3rem;
 }
-/* setting background for the cards */
 
+/* these are the cards. each card has an image heading text and button. so i am flexing each card so the content in them are stacked ontop of each other in mobile styling..   */
 .card1,
 .card2,
 .card3,
 .card4{
-    /* background-color: rgba( 0, 0, 0, 0.2 ); */
+    
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
 }
+/* felt like making this a bit bigger too */
 main h3{
     margin-bottom: 1rem;
 }  
-    
+   /* just making some styles to the content that is inside the cards i also cant to stack them ontop of each other so i flexed them. i also want the text to be red.  */
 .card-content1,
 .card-content2,
 .card-content3,
@@ -515,7 +547,8 @@ main h3{
     flex-direction: column;
     
 }
-
+/* see 'BUTTON comment for how i styled these buttons. all my buttons have the same styling and same hover effect on them . Call to action buttons are a bit diffrent.  */
+/* these buttons are in side the cards of the shop plants.  */
 .card-content1 button{
     background-color: #FF6B6B;
     color: white;
@@ -584,14 +617,18 @@ main h3{
     border-radius: 25px;
     transform: scale(1);
 }
+/* end of button stylings.  */
+
+
+/* this is the chair photo section. i added the image in here because i want it to be the background of the entire section */
 .chair-photo{
     background: url(../pexels-paula-schmidt-963486.jpg) no-repeat center;
     background-size: cover;
-    /* background-position: bottom; */
-    
     margin-bottom: 5rem;
     
 }
+    
+    /* i want the text on top of the image to be centered and stacked on top of each other so i flexed it. gave it a diffrent padding so i can align it to the positon i need it to be .  */
     
 .chair-content{
     display: flex;
@@ -600,6 +637,7 @@ main h3{
     margin-top: 2rem;
     
 }
+/* this is the button ontop fo the image. it follows the same styles as the other call to action buttons on this website.  */
 .chair-content button{
     width: 25%;
     align-self: flex-end;
@@ -620,40 +658,45 @@ main h3{
         transform: scale(1);
     
 }
+/* thats the end of my shop page styling. the footer styles are in the home page. set to all the pages.  */
 /*/////////////////////////
     contact mobile style
 ///////////////////////////  */
+/* contact page has a banner background image with the nav and text on top of it. */
 .headershop{
     background: url(../leone-venter-pVt9j3iWtPM-unsplash-min.jpg) bottom no-repeat;
     background-size: cover;
     height: 500px;
-    
-    
-    /* flex-direction: column; */
-    /* align-items: flex-end; */
-    
 }
+    
+    /* i want the text ontop of the image to be set to the bottom side. */
+    
 .header-content{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-
+/* changing someheading styles */
 .header-content h1{
     padding-left: 2rem;
     padding-top: 10rem;
 }
-/* //// contact form//// */
+/* //// ///////////////////////////////
+    contact form
+//////////////////////////////////////// */
+/* setting up the parent conatiner of the form.. i want to have a border to it and color */
 .contact-form{
-    /* background-color: rgba( 217, 218, 222, 0.1 ); */
+   
     border-radius: 25px;
     padding: 2rem;
     margin: 2rem;
     border: #C44D58 solid 5px;
 }
+/* i am hiding all the labels from the form. cuz eww. who would ever have labels showing. this aint the 90s.  */
 label{
     display: none;
 }
+/* i am chaning the width of all the input of the form. and seting some color changes */
 input{
     
     width: 100%;
@@ -662,15 +705,18 @@ input{
     padding: 5px 0;
     margin-bottom: 1rem;
 }
+/* text area styles i want to make it bigger */
 textarea{
     width: 100%;
     border: #C44D58 solid 1px;
     border-radius: 25px;
     padding: 5px 0;
 }
+/* making the text a bit better to read */
 ::placeholder{
     padding: 15px;
 }
+/* this is the form buton. just setting some styles adding the unique border and the transition for the hover to follow */
 .button{
     width: 100%;
     margin-top: 1rem;
@@ -680,63 +726,74 @@ textarea{
     border: none;
     cursor: pointer;
     border-radius: 30px 100px;
-    /* margin-top: 1rem; */
-    /* margin-right: 2rem; */
     transition: all ease-in-out 0.5s;
+    
 }
 .button:hover{
     
     background: darkred;
     border-radius: 25px;
     transform: scale(1);
-
 }
+/*  google map styles. i want it to take the entire width of the page. */
 .map{
     margin-bottom: 2rem;
     margin-top: 2rem;
     max-width: 100%;
 }
-/* /////////////tablet styles////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////
+                            tablet styles
+/////////////////////////////////////////////////////////////////////////////////////// */
+/* setting up the media query */
 @media screen and (min-width: 768px){
-    /* home page styles */
+    /* home page tablet styles */
+    /* i want the nav to be in a row style. and spaced nicely */
     .nav-list{
         display: flex;
         justify-content: space-between;
     }
+    /* adding some space for the links */
     .nav-list li{
         padding-left: 8rem;
         padding-right: 8rem;
         
     }
+    /* changing the width of the button mking it bigger*/
     .banner-content button{
         max-width: 50%;
         margin-bottom: 5rem;
     }
+    /* starting the grid set up from the best seller plannt section. setting up 2 rows and 2 columns with template areas. and giving the plant a grid area to move to.  */
     .batch1{
         display: grid;
         grid-template-areas: 
         "side aside"
         "side1 aside1";
     }
+    /* this is moving to the side */
     .img1{
         grid-area: side;
         padding: 2rem;
     }
+    /* moving to the aside */
     .img2{
         grid-area: aside;
         padding-top: 29rem;
         padding: 2rem;
         
     }
+    /* moving to side1 */
     .img3{
         grid-area: side1;
         padding: 2rem;
 
     }
+    /* moving to aside1 */
     .img4{
         grid-area: aside1;
         padding: 2rem;
     }
+    /* setting up the grid for the second section of best seller. the mugs. again i am setting grid area of 4 section in a 2 row and 2 column grid. and asigning the divs of the images to it.  */
     .batch2{
         display: grid;
         grid-template-areas: 
@@ -762,7 +819,11 @@ textarea{
         grid-area: side5;
         padding: 2rem;
     }
-    /* ////shop tablet styles////// */
+    /* /////////////////////////////////////////////////////////////////
+                    shop tablet styles
+    /////////////////////////////////////////////////////////////// */
+    /* for the tablet styles of this page. i wanted the cards to still be on top oof each others but make them a bit bigger and nicer.  */
+    /* making the cards have a little bit more room from each side. */
     .card1,
     .card2,
     .card3,
@@ -770,12 +831,20 @@ textarea{
         padding-left: 10rem;
         padding-right: 10rem;
         
+    } 
+    /* changing the size of button so they match the images.  */
+    .card-content1 button,
+    .card-content2 button,
+    .card-content3 button,
+    .card-content4 button{
+        width: 100%;
     }
-    
+    /* i am changing the position of this image so i can be seen better */
     .chair-photo{
         background-position: center;
         background-size: cover;
     }
+/* adding some stules to the content to move them around. the chair was making the text hard to read.  */
     .chair-content{
         padding-top: 5rem;
         padding-bottom: 20rem;
@@ -785,66 +854,109 @@ textarea{
     .chair-content p{
         margin-top: 1rem;
     }
-    .card-content1 button,
-    .card-content2 button,
-    .card-content3 button,
-    .card-content4 button{
-        width: 100%;
+    /* end of shop page styles. the footer is still the same.  */
+   
+    /* ////////////////////////////////////////////////////////////////////
+                    contact page tablet styles
+///////////////////////////////////////////////////////////////////////// */
+/* so i am adding an animation for the svg button. i want this svg to be bigger and bounce up and down to guide the user to the contact from and the map on the page */
+    /* securing the postion of the svg */
+    .arrow{
+        position: fixed;
     }
-    /* /////////// contact page tablet styles///// */
+    /* setting up the animation key frames. so at the start of the animation i want this arrow to get huge and move a bit to the left. then half through i want this arrow to start moving down and still keep its scale. then at the bottom i want the arrow to get back up to where it started and still keep its size. this animation is has to run forever */
+    @keyframes move {
+        10% {
+            transform: scale(5, 4);
+        }
+        50%{
+            transform: scale(5, 4) translate(0, 100px);
+        }
+        
+        100%{
+            transform: scale(5, 4) translate(0, 0);
+        }
+    }
+    /* changing some styles of the animation for the svg. assigning the animation of move to it. making it bigger. making it run for ever and make sure it looks good with the ease in and out.  */
+    .svg-arrow{
+        transform: scale(5);
+        animation-name: move;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        
+    }
+
+    /* setting up a grid for the form. i want to style so the name and # on one side and the last name and email on the other and the text area gets its one space at the bottom. 
+    so im setting 2 columns */
    .form{
        display: grid;
        grid-gap: 1rem;
        grid-template-columns: 1fr 1fr;
    }
+   /* making the text area span across the columns.  */
    .move{
        grid-column: 1 / 3;
        
    }
+   /* moving the form button to span to the right side of the grid.  */
     .movebutton{
         grid-column: 2 / 3;
         
     }
+    /* adding some style to the button  */
     .button{
         padding: 1rem 0;
     }
+    /* closing media query for tablet style.  */
 }
-/* staring desktop styles */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////
+                                         desktop styles 
+///////////////////////////////////////////////////////////////////////////////////////////*/
+/* opening desktopm media query.  */
 @media screen and (min-width: 1025px){
-    /* styling home page */
+    /* ////////home page///////////// */
+    /*  i want the nav to be in a grid and be on the right side so i set up a grid area with 3 columns. */
    .nav{
        display: grid;
        grid-template-columns: 1fr 1fr 1fr;
        grid-gap: 5px;
    }
+   /* i want the icons to be under the nav so i set them up like this */
    .top-nav .nav-icons{
        display: block;
        float: right;
        margin-right: 1rem;
       
    }
-   
+   /* i moved the nav to where it needs to be in the grid */
    .nav .top-nav{
        grid-column: 3 / 4;
       
    }
+   /* took away the background and gave it a line under it */
    .nav-list li{
        background: none;
        border-bottom: darkred solid 5px;
     }
+    /* moving the text to the left  */
     .banner-content h1{
         align-self: flex-start;
         padding-left: 2rem;
         
     }
+    /* moving the text to the left to align with the header */
     .banner-content .contentp{
         font-size: 2rem;
         text-align: left;
         
     }
+    /* making the button smaller */
     .banner-content .CTA{
        max-width: 25%;
     }
+    /* setting up the grid for the first section of best seller. setting this up with a grid areas. and assigning the "plants" to the areas it needs to move to. i am also taking away all the padding so they are closer together and they align better */
     .batch1{
         display: grid;
         grid-template-areas: 
@@ -879,10 +991,15 @@ textarea{
     .batch1 .image3{
         margin-top: 0px;
     }
-        
+
+    /* end of this grid styles.  */
+
+
+        /* making the font of this section bigger */
     .wall p{
         font-size: 2rem;
     }  
+    /* making the heading bigger in the second best seller section and text*/
     .sellers h2{
         font-size: 4rem;
     }  
@@ -892,7 +1009,7 @@ textarea{
     .best-sellers-2 p{
         font-size: 1.5rem;
     }
-   /* starting grid for section 2 */
+   /* starting grid for section 2 just like the grid done with the first section i am assigning the mugs a grid area to go to.  */
    .batch2{
     display: grid;
     grid-template-areas: 
@@ -912,7 +1029,12 @@ textarea{
     .sec2{
         grid-area: aside;
     }
-    /* ////starting desktop for shop page */
+    /* end of home page desktop styles */
+    /* /////////////////////////////
+            desktop shop page
+    ////////////////////////////// */
+
+    /* i am setting up a grid template for the cards to go into. this is a 2 row and 4 column grid. each card will go into its area. i am flexing some of the cards in reverse to give them an alternation stacking effect. i am also setting the sizes of the photos that are in the cards in the grid.   */
     .cardgrid{
         display: grid;
         grid-template-areas: 
@@ -931,13 +1053,14 @@ textarea{
     .card-content2,
     .card-content3,
     .card-content4{
-        font-size: auto;
+        
        display: flex;
        flex-direction: column;
        
        padding-top: 40px;
        padding-bottom: 0px;
     }
+    /* setting a width for the add to cart buttons */
     .cart1,
     .cart2,
     .cart3,
@@ -946,7 +1069,7 @@ textarea{
         
         
     }
-    
+/* photo sizing */
     .shopphoto1{
         max-height: 600px;
         max-width: 500px;
@@ -956,6 +1079,7 @@ textarea{
         display: flex;
         flex-direction: row;
     }
+    /* photo sizing */
     .shopphoto2{
         max-height: 600px;
         max-width: 500px;
@@ -965,6 +1089,7 @@ textarea{
         display: flex;
         flex-direction: row-reverse;
     }
+    /* photo sizing */
     .shopphoto3{
         max-height: 600px;
         max-width: 500px;
@@ -974,59 +1099,69 @@ textarea{
         display: flex;
         flex-direction: row;
     }
+    /* photo sizing */
     .shopphoto4{
         max-height: 600px;
         max-width: 500px;
     }
+    /* end of card grid styles */
+
+
+    /* styling  the chair section  */
     .chair-content{
         font-size: 2rem;
     }
+    /* chaning the postion usisng padding and changing color.  */
     button.shop-CTA{
         padding-top: 2rem;
         padding-bottom: 2rem;
+        color: white;
     }
-
-
-
-
-
-    /* .card1{
-        display: flex;
-        flex-direction: row-reverse;
-        padding-right: 0px;
+    /* ///////////////////////
+    contact page desktop styles
+    ////////////////////////// */
+    /* making the font bigger and changing position with margin . */
+    .header-content h1{
+        font-size: 4rem;
+        margin-right: 6rem;
     }
-    .shopphoto1{
-        max-height: 600px;
-        max-width: 500px;
+    /* setting up the same styles as the tablet for this animation for the desktop */
+    .arrow{
+        position: fixed;
     }
-    .card-content1{
+      /* setting up the animation key frames. so at the start of the animation i want this arrow to get huge and move a bit to the left. then half through i want this arrow to start moving down and still keep its scale. then at the bottom i want the arrow to get back up to where it started and still keep its size. this animation is has to run forever */
+    @keyframes move {
+        10% {
+            transform: scale(5, 4);
+        }
+        50%{
+            transform: scale(5, 4) translate(0, 100px);
+        }
         
-        font-size: 1.5rem;
+        100%{
+            transform: scale(5, 4) translate(0, 0);
+        }
     }
+    .svg-arrow{
+        transform: scale(5);
+        animation-name: move;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        
+    }
+    /* changing the size of the form .. making sure its resposive witht the screen size */
+    .form{
+        max-width: 100%;
+    }
+    .contact-form{
+        max-width: 50%;
+        margin-left: 20rem;
+    }
+/* end of desktop styles. hope you enjoy my website.  */
+
+
+
+
     
-    .card2{
-        display: flex;
-        flex-direction: row;
-        padding-left: 0px;
-    }
-    .shopphoto2{
-        max-height: 600px;
-    }
-    .card3{
-        display: flex;
-        flex-direction: row-reverse;
-        padding-right: 0px;
-    }
-    .shopphoto3{
-        max-height: 500px;
-        max-width: 600px;
-    }
-    .card4{
-        display: flex;
-        flex-direction: row;
-        padding-left: 0px; 
-    }
-    .shopphoto4{
-        max-height: 600px;
-    } */
 }

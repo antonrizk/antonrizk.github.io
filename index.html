@@ -21,11 +21,13 @@
    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- /////starting the web////// -->
  <title>Rizk Designs</title>
   </head>
   <body>
+    <!-- in the header section i an adding a bootstrap dark nav.  -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark ">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -54,28 +56,28 @@
     
     
         
-          
+          <!--the banner section includes a image and call to action button. with a heading. and the background imgae can be found in css  -->
         <section class="banner">
           
             <div>
                 <img src="Group56.png" alt="" class="mt-3 img-fluid logo">
             </div>
              
-             <h1 class="welcome display-1 container animate__animated animate__backInDown">Hello, I'm Anton Rizk</h1>
+              <h1 class="welcome display-1 container animate__animated animate__backInDown">Hello, I'm Anton Rizk</h1>
              
              <div class="profile">
-             <img src="R_A-13.jpg" alt="" class="img-fluid profile-img col col-lg-6 offset-lg-5 mt-3">
+              <img src="R_A-13.jpg" alt="" class="img-fluid profile-img col col-lg-6 offset-lg-5 mt-3">
             </div>
             <div class="d-grid d-md-flex offset-lg-10 mt-4">
                 <button type="button" class="btn btn-dark btn-lg mb-5">About Me</button>
             </div>
-          
+          <!-- end of banner section -->
         </section>
       
     
-  
+  <!-- open container  -->
     <div class="container">
-  
+  <!-- about me section. setting up a row and adding all the content in it -->
     <div class="row">
         <section class="about" id="about">
           <div class="about-content">
@@ -85,7 +87,9 @@
           </div>
           </div>
         </section>
+        <!-- end of about section -->
     </div>
+    <!-- for this section i have set up a costume bootstrap card section. in the cards themself there is a picture and a button. how the cards are displayed are set my a bootstrap grid system. at a large screen the individual card takes up 4 cols. at median and it takes up 6 and at small the card takes up 12.  this section also includes come content.  -->
     <div class="black" id="work">
     <div class="cards-bg">
         <section class="cards my-cards">
@@ -95,12 +99,12 @@
           </div>
         </section>
         <div class="row row2">
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class=" col-lg-4 col-md-6  mb-4">
               <div class="card text-dark bg-dark">
                 <a href="#"><img src="Asset2ldpi.png" class="card-img-top img-fluid"  alt=""></a>
                 <div class="card-body">
                   <div class="d-grid">
-                  <a href="#" class="btn btn-light text-dark">illustrations</a>
+                  <a href="#" class="d-grid btn btn-light text-dark">illustrations</a>
                 </div>
                 </div>
               </div>
@@ -166,7 +170,7 @@
           </div>
         </div>
 
-        
+        <!-- for this section i have a some content and a bootstrap card with svg ontop of an image   -->
             <div class="row">
             <section class="connect" id="contact">
               <div class="connect-content">
@@ -181,6 +185,7 @@
                     </div>
                   </div>
             </section>
+            <!-- end of contact section -->
             </div>
           
 
@@ -188,7 +193,7 @@
     </div>
   
 
-    
+    <!-- for this city section i wanted to have a heading and a image that bleeds outside the container.  -->
     <section class="city">
       <div class="city-content container">
         <h1 class="display-1 mt-5 based">Based in Ottawa, Ontario</h1>
@@ -196,11 +201,13 @@
       <div>
         <img src="ottawapic.jpg" class="img-fluid mt-5 ottawa" alt="">
       </div>
+      <!-- end of city section -->
     </section>
+    <!-- the back to top button. i created a button with alink that when pressed it reloads the page back to the top.  -->
     <div class="mt-5 d-flex justify-content-end top">
       <button type="button"  class="btn btn-dark"><a href="index.html">Top</a></button>
     </div>
-    <!-- footer -->
+    <!-- footer section is set up with a logo icons and copyright line. i have given the logo some bootstrap col styling to ensure its places where i want it to be. -->
     <footer class="bg-dark text-center text-light text-lg-start mt-5">
   
         <div class="container p-3">
@@ -213,7 +220,7 @@
             </div>
         </div>
         
-      
+      <!-- footer icons.  -->
         
         <div class="text-center bg-dark text-md-center">
             <div class="icons">
@@ -236,7 +243,7 @@
       
       </footer>
 
-
+<!-- closing body tag. end of code. -->
 
   </body>
 </html>

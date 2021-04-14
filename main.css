@@ -26,8 +26,10 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     background-color: #0A0B0D;
+    font-family: 'open sans', monospace;
  
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -59,7 +61,7 @@ a:visited{
 
 }
 .banner{
-    background-image: url(../minimalism-.jpg);
+    background-image: url(minimalism-.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,19 +79,14 @@ a:visited{
     
 }
 .welcome{
-    font-family: 'Space Mono', monospace;
+    
     font-weight: bold;
-    margin-top: 3rem;
-   
-    
-    
+    margin-top: 3rem; 
 }
-.profile-img{
-    max-width: 100%;
-    
-}
+
 .about{
-    background: url(../pen-4337521_1920.jpg);
+    background: url(pen-4337521_1920.jpg);
+    opacity: 75%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,7 +149,7 @@ a:visited{
 }
 .btn:hover{
     background: grey;
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 .card.btn{
     color: black;
@@ -238,11 +235,11 @@ a:visited{
     }
   }
   
-  .resume{
-      animation-name: wobble-hor-bottom;
-      animation-delay: 2s;
+.resume{
+     animation-name: wobble-hor-bottom;
+     animation-delay: 2s;
       animation-duration: 8s;
-      
+      animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
   }
 

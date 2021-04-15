@@ -62,7 +62,20 @@ a:visited{
     
     background-color: rgba(211,211,211, 0.5);
 }
+/* adjusting nav bar Profile image */
+.nav-img{
+    border-radius: 50%;
+    max-width: 10%;
+    height: auto;
+}
 /* this is the call to action button. adding a transition value */
+/* letting the image breathe a bit */
+.profile{
+    padding: 2rem;
+}
+.CTA{
+    padding: 2rem;
+}
 .btn{
     transition: 0.8s ease-in-out 0.3s;
     border: none;

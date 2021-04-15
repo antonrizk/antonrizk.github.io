@@ -65,7 +65,7 @@ a:visited{
 /* adjusting nav bar Profile image */
 .nav-img{
     border-radius: 50%;
-    max-width: 10%;
+    max-width: 14%;
     height: auto;
 }
 /* this is the call to action button. adding a transition value */
